@@ -1,0 +1,12 @@
+kind: pipeline
+name: Kernel Build
+
+clone:
+  depth: 1
+
+steps:
+ - name: 4.19 Kernel for Motorola G9
+   image: proxer05/ubuntu-droid-builder:latest
+   commands:
+      - cd /drone/src
+      - sudo bash compile.sh
