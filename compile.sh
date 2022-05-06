@@ -30,7 +30,6 @@ build_clang() {
     AR="ccache llvm-ar" \
     AS="ccache llvm-as" \
     NM="ccache llvm-nm" \
-    LD="ccache ld.lld" \
     STRIP="ccache llvm-strip" \
     OBJCOPY="ccache llvm-objcopy" \
     OBJDUMP="ccache llvm-objdump"\
